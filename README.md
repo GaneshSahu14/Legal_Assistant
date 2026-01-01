@@ -1,116 +1,55 @@
-⚖️ Legal Assistant
-📌 Overview
+# LegalAssist – Private Offline Legal Document Assistant 🚀
 
-Legal Assistant is an AI-powered application designed to help users understand legal information in a simple and accessible way.
-The system assists users by answering legal questions, explaining laws, summarizing legal documents, and guiding them through basic legal procedures.
+**LegalAssist** is a fully offline, privacy-first AI-powered legal document assistant that helps users analyze, understand, and evaluate contracts, NDAs, employment agreements, privacy policies, and other legal documents — all without sending sensitive data to the cloud. 🔒
 
-⚠️ Disclaimer: This application is for educational and informational purposes only and does not replace professional legal advice.
+## Features ✨
 
-🎯 Objectives
+- **100% Local & Private** 🔒: Runs entirely on your machine using Ollama and FAISS — no API keys, no internet required after setup.
+- **Intelligent RAG Chatbot** 🤖: Upload PDFs, DOCX, or TXT files and ask questions in natural language. Get accurate answers grounded in your documents with page citations.
+- **Real Legal Assistant Behavior** ⚖️: Goes beyond quoting text — provides balanced analysis, highlights risks and benefits, identifies ambiguities, and offers practical negotiation suggestions.
+- **Modern UI** 🎨: Beautiful dark-themed React + Tailwind CSS interface with sidebar document library, chat history, and smooth interactions.
+- **Document Tools** 📑:
+  - Clause extraction 🔍
+  - Two-document comparison with risk scoring ⚠️
+  - Direct file preview 👀
+- **FastAPI Backend** ⚡: Efficient document processing, semantic search with Hugging Face embeddings, and local LLM inference.
 
-Simplify complex legal language for common users
+## Tech Stack 🛠️
 
-Provide quick answers to basic legal queries
+- **Frontend**: React (Vite + TypeScript), Tailwind CSS, Lucide Icons
+- **Backend**: FastAPI (Python)
+- **AI Stack**:
+  - LLM: Ollama (Llama 3.2 3B or Llama 3.1 8B recommended) 🧠
+  - Embeddings: `all-MiniLM-L6-v2` (via Hugging Face)
+  - Vector Store: FAISS
+  - Framework: LangChain
+- **Document Processing**: PyPDF2, python-docx, unstructured
 
-Assist in understanding legal documents and acts
+## Prerequisites 📋
 
-Reduce dependency on manual legal research
+- Python 3.10+
+- Node.js 18+ and npm/yarn/pnpm/bun
+- Ollama installed and running [](https://ollama.com) 🐳
 
-🛠️ Features
+## Usage 📝
 
-📄 Legal Query Answering – Ask questions related to laws, acts, and legal terms
+ - Upload your legal documents (PDF, DOCX, TXT) 📤
+ - Wait for processing to complete ⏳
+ - Start chatting! Ask questions like:
+ - "Is this NDA balanced?" ⚖️
+ - "What are the main risks for me?" ⚠️
+ - "Should I sign this agreement?" 🤔
+ - "Suggest improvements to the liability clause" 💡
+-The assistant will respond with thoughtful analysis, citations, and key takeaways.
 
-🧾 Legal Document Summarization – Summarizes long legal texts into simple language
+## Privacy & Security 🔐
+ - All processing happens locally.
+ - Documents never leave your machine.
+ - No external API calls (except initial model download via Ollama).
 
-📚 Law Explanation – Explains sections, articles, and clauses clearly
+## Contributing 🤝
+ - Contributions are welcome! Feel free to open issues or submit pull requests.
 
-🔍 Keyword-Based Search – Retrieves relevant legal information
+ ##👨‍💻 Author
 
-🤖 AI/NLP Powered – Uses Natural Language Processing for better understanding
-
-🧠 Technologies Used
-Frontend
-
-HTML / CSS / JavaScript
-
-React (if applicable)
-
-Backend
-
-Python
-
-Flask / FastAPI
-
-AI & NLP
-
-Natural Language Processing (NLP)
-
-Machine Learning Models (optional / future scope)
-
-Database
-
-MySQL / SQLite / MongoDB (based on implementation)
-
-🏗️ System Architecture
-
-User enters a legal query
-
-Query is processed using NLP techniques
-
-Relevant legal data is fetched
-
-AI model generates a simplified response
-
-Result is displayed to the user
-
-📂 Project Structure
-Legal_Assistant/
-│
-├── backend/
-│   ├── app.py
-│   ├── models/
-│   ├── utils/
-│
-├── frontend/
-│   ├── src/
-│   ├── components/
-│
-├── dataset/
-│
-├── requirements.txt
-├── README.md
-
-
-📊 Use Cases
-
-Students studying law
-
-Common people seeking basic legal awareness
-
-Educational institutions
-
-Legal tech research projects
-
-⚠️ Limitations
-
-Not a replacement for a licensed lawyer
-
-Accuracy depends on available data
-
-Limited to predefined legal datasets
-
-🔮 Future Enhancements
-
-Voice-based legal assistant
-
-Multi-language support
-
-Integration with real-time legal databases
-
-Advanced LLM-based legal reasoning
-
-Case prediction and analytics
-
-👨‍💻 Author
-
-Made by Ganesh Sahu♥️
+  - Made by Ganesh Sahu♥️
