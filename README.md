@@ -80,19 +80,6 @@ Legal_Assistant/
 ├── requirements.txt
 ├── README.md
 
-🚀 Installation & Setup
-1️⃣ Clone the Repository
-git clone https://github.com/your-username/Legal_Assistant.git
-cd Legal_Assistant
-
-2️⃣ Install Dependencies
-pip install -r requirements.txt
-
-3️⃣ Run the Application
-python app.py
-
-4️⃣ Access the App
-http://localhost:5000
 
 📊 Use Cases
 
